@@ -18,7 +18,15 @@ const changeText = () => {
 }
 
 
-//JS number 6 - Appending Text Content to a List
+  //JS number 4 - Open a Small Browser Window
+let smallWindow;
+
+function openWin() {
+  smallWindow = window.open("thirdpage.html", "", "width=360,height=500");
+}
+
+
+//JS number 5 - Appending Text Content to a List
 var alertList = document.querySelectorAll('.alert');
             alertList.forEach(function (alert) {
             new bootstrap.Alert(alert)
@@ -30,15 +38,8 @@ function dagdag() {
   }
 
 
-  //JS number 5 - Open a Small Browser Window
-let smallWindow;
 
-function openWin() {
-  smallWindow = window.open("thirdpage.html", "", "width=360,height=500");
-}
-
-
-//JS number 7 - Close previous Small Browser Window
+//JS number 6 - Close previous Small Browser Window
 function closeWin() {
   smallWindow.close();
 }
@@ -49,7 +50,7 @@ function closeMain() {
     main.close();
 }
 
-//JS for forms
+//JS for forms 7, 8 and 9
 $(".control_save").click(function () {
     $("#testform").saveForm();
     $("#message").text('Data was successfully submitted. Click Reset Button to reset data submitted, and you can click Restore Button to restore previous data entered');
