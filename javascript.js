@@ -28,8 +28,18 @@ function dagdag() {
     document.getElementById("money").appendChild(li);
   }
 
+<!------JS for the form, data stored to localStorage--->
+$(".control_save").click(function () {
+                $("#testform").saveForm();
+                $("#message").text('Data was successfully submitted. Click Reset Button to reset data submitted, and you can click Restore Button to restore previous data entered');
+                return false;
+            });
 
-
+            $(".control_restore").click(function () {
+                $("#testform").restoreForm();
+                $("#message").empty();
+                return false;
+            });
 
 
 
