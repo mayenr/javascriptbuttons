@@ -44,21 +44,5 @@ function closeWin() {
   smallWindow.close();
 }
 
-let main = "index.html"
 
-function closeMain() {
-    main.close();
-}
 
-//JS for forms 7, 8 and 9
-$(".control_save").click(function () {
-    $("#testform").saveForm();
-    $("#message").text('Data was successfully submitted. Click Reset Button to reset data submitted, and you can click Restore Button to restore previous data entered');
-    return false;
-});
-
-$(".control_restore").click(function () {
-    $("#testform").restoreForm();
-    $("#message").empty();
-    return false;
-});
