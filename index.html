@@ -144,6 +144,19 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="javascript.js"></script>
     <script type="text/javascript" src="jquery.formsaver.js"></script>
+    <script>
+            $(".control_save").click(function () {
+                $("#testform").saveForm();
+                $("#message").text('Data was successfully submitted. Click Reset Button to reset data submitted, and you can click Restore Button to restore previous data entered');
+                return false;
+            });
+
+            $(".control_restore").click(function () {
+                $("#testform").restoreForm();
+                $("#message").empty();
+                return false;
+            });
+        </script>
 
 </body>
 </html>
