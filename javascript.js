@@ -17,7 +17,8 @@ const changeText = () => {
 
 }
 
-//JS number 7 - Appending Text Content to a List
+
+//JS number 6 - Appending Text Content to a List
 var alertList = document.querySelectorAll('.alert');
             alertList.forEach(function (alert) {
             new bootstrap.Alert(alert)
@@ -29,31 +30,15 @@ function dagdag() {
   }
 
 
-$(".control_save").click(function () {
-                $("#testform").saveForm();
-                $("#message").text('Data was successfully submitted. Click Reset Button to reset data submitted, and you can click Restore Button to restore previous data entered');
-                return false;
-            });
-
-            $(".control_restore").click(function () {
-                $("#testform").restoreForm();
-                $("#message").empty();
-                return false;
-            });
-
-
-
-
-
-
-
+  //JS number 5 - Open a Small Browser Window
 let smallWindow;
 
 function openWin() {
   smallWindow = window.open("thirdpage.html", "", "width=360,height=500");
-  
 }
 
+
+//JS number 7 - Close previous Small Browser Window
 function closeWin() {
   smallWindow.close();
 }
@@ -63,3 +48,16 @@ let main = "index.html"
 function closeMain() {
     main.close();
 }
+
+//JS for forms
+$(".control_save").click(function () {
+    $("#testform").saveForm();
+    $("#message").text('Data was successfully submitted. Click Reset Button to reset data submitted, and you can click Restore Button to restore previous data entered');
+    return false;
+});
+
+$(".control_restore").click(function () {
+    $("#testform").restoreForm();
+    $("#message").empty();
+    return false;
+});
